@@ -1,57 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card Example</title>
+
+    <title>Page</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
+
         .card {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            padding: 20px;
-            text-align: center;
+            /* Add shadows to create the "card" effect */
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            border-radius: 5px; /* Rounded corners */
+            width:30%;
         }
-        .card-title {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 10px;
+
+            /* On mouse-over, add a deeper shadow */
+            .card:hover {
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            }
+
+        /* Add some padding inside the card container */
+        .container {
+            padding: 2px 16px;
         }
-        .card-description {
-            font-size: 16px;
-            color: #666;
-            margin-bottom: 20px;
+
+        .tag-container{
+
+            overflow:hidden;
         }
-        .card-tags {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
+
+        .tag{
+
+            float:left;
+            background-color:lightgray;
+            border-radius:20px;
+            padding:5px;
+            margin:5px;
+
         }
-        .tag {
-            background-color: #007bff;
-            color: #fff;
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-size: 14px;
-        }
+
+       
     </style>
 </head>
+
 <body>
+
     <div class="card">
-        <div class="card-title">LMS</div>
+        <div class="card-title"><h2><b>LMS</b></h2></div>
         <div class="card-description">A leave management system is a process within an organization that determines how leave is requested by employees and approved by managers, as well as how it is tracked for payroll, balance, and other purposes. It leads to better communication, organized employee leave calendar, time efficiency, and real time updates. You are able to add in Public Holidays for the year and upload them into the page. When clicking on “Manage My Leave”, you are directed to “My LMS Record Details”, “Apply Leave”, “Manage Leave History”, and “Compensation Details”. For “My LMS Record Details” this allows the user to add in their earned PTO hours, eligible monthly hours, earned compensation hours, and PTO cap hours. To “Apply Leave” you must fill in the start date you are leaving and the end date which you are coming back, as well as the type of leave and the reason for the leave. “Manage Leave History” lets the user track their leave record and the “Compensation Details” lets them track their compensation record.</div>
+        <div class="card-gist">This page provides an overview of the leave management system, detailing how employees can manage and track their leave and compensation records.</div>
         <div class="card-tags">
-               <div class="tag">Public Holidays</div>
+            <div class="tag">Public Holidays</div>
             <div class="tag">Manage Leave</div>
             <div class="tag">Compensation</div>
         </div>
